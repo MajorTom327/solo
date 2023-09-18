@@ -1,0 +1,18 @@
+[package]
+name = "solo"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+colorize = "0.1.0"
+rand = "0.8.5"
+ratatui = { version = "0.23.0", default-features = false, features = ['termion'] }
+termion = "2.0.1"
+
+[[bin]]
+bench = false
+path = "src/main.rs"
+name = "solo"
